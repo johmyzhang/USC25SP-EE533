@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <sys/types.h> 
 #include <sys/socket.h>
+#include <signal.h>
 #include <netinet/in.h>
 
 void error(char *msg)
@@ -13,6 +14,7 @@ void error(char *msg)
 
 int main(int argc, char *argv[])
 {
+    signal(SIGCHLD, SIG_IGN);
     int sockfd, newsockfd, portno, clilen;
     char buffer[256];
     struct sockaddr_in serv_addr, cli_addr;
