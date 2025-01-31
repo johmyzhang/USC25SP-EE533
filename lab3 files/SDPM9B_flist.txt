@@ -1,0 +1,11 @@
+# Output products list for <SDPM9B>
+SDPM9B.asy
+SDPM9B.ngc
+SDPM9B.sym
+SDPM9B.v
+SDPM9B.veo
+SDPM9B.vhd
+SDPM9B.vho
+SDPM9B.xco
+SDPM9B_flist.txt
+SDPM9B_xmdf.tcl

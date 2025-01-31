@@ -1,0 +1,2 @@
+xst -ise "C:/Documents and Settings/student/Desktop/lab3/lab3.ise" -intstyle ise -ifn "C:/Documents and Settings/student/Desktop/lab3/ids_sim.xst" -ofn "C:/Documents and Settings/student/Desktop/lab3/ids_sim.syr"
+xst -ise "C:/Documents and Settings/student/Desktop/lab3/lab3.ise" -intstyle ise -ifn "C:/Documents and Settings/student/Desktop/lab3/ids_sim.xst" -ofn "C:/Documents and Settings/student/Desktop/lab3/ids_sim.syr"

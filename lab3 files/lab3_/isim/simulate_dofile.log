@@ -1,0 +1,18 @@
+run 1000 ns
+run 11 us
+run 11 us
+run 11 us
+run 15 us
+run 15 us
+run 15 us
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+isimrun all
+stop -s
+run 20 us
+run 20 us

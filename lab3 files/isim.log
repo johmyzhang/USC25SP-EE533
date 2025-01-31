@@ -1,0 +1,39 @@
+Command line:
+   ./ids_sim_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1100
+WARNING:Simulator:16 - For instance ids_sim/module_regs/, width 48 of formal
+   port software_regs is not equal to width 96 of actual.
+WARNING:Simulator:679 -  For instance ids_sim/module_regs/, width 16 of formal
+   port hardware_regs is not equal to width 32 of actual variable matches. 
+
+Wed Jan 29 16:04:53 2025
+
+Total Line Count : 2107
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 149.889 Meg
+
+ Total Signals          : 5252
+ Total Nets             : 2338
+ Total Signal Drivers   : 1446
+ Total Blocks           : 1095
+ Total Primitive Blocks : 975
+ Total Processes        : 2152
+ Total Traceable Variables  : 433
+ Total Scalar Nets and Variables : 4359
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun 12 us 
+
+ Total Simulation Time: 0.234375 sec
+
+ Current Memory Usage: 159.326 Meg
+
+Wed Jan 29 16:07:02 2025
+

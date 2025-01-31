@@ -1,0 +1,158 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Documents and Settings/student/Desktop/lab3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Documents and Settings/student/Desktop/lab3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ids_sim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ids_sim.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ids_sim"
+Output Format                      : NGC
+Target Device                      : xc2vp30-6-ff896
+
+---- Source Options
+Top Module Name                    : ids_sim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : ids_sim.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "comparator.v" in library work
+Module <AND7_MXILINX_comparator> compiled
+Module <COMP8_MXILINX_comparator> compiled
+Compiling verilog file "wordmatch.v" in library work
+Module <comparator> compiled
+Module <OR8_MXILINX_wordmatch> compiled
+Compiling verilog file "SDPM9B.v" in library work
+Module <wordmatch> compiled
+Compiling verilog file "reg9B.v" in library work
+Module <SDPM9B> compiled
+Module <FD16CE_MXILINX_reg9B> compiled
+Module <FD8CE_MXILINX_reg9B> compiled
+Compiling verilog file "ids_sim/small_fifo.v" in library work
+Module <reg9B> compiled
+Compiling verilog file "busmerge.v" in library work
+Module <small_fifo> compiled
+Compiling verilog file "ids_sim/generic_regs.v" in library work
+Module <busmerge> compiled
+Compiling verilog file "ids_sim/fallthrough_small_fifo_v2.v" in library work
+Module <generic_regs> compiled
+Compiling verilog file "dropfifo.v" in library work
+Module <fallthrough_small_fifo> compiled
+Module <FTCE_MXILINX_dropfifo> compiled
+Module <CB8CE_MXILINX_dropfifo> compiled
+Module <M2_1_MXILINX_dropfifo> compiled
+Module <FTCLEX_MXILINX_dropfifo> compiled
+Module <CB8CLE_MXILINX_dropfifo> compiled
+Module <COMP8_MXILINX_dropfifo> compiled
+Module <FD8CE_MXILINX_dropfifo> compiled
+Compiling verilog file "detect7B.v" in library work
+Module <dropfifo> compiled
+Compiling verilog file "ids_sim/ids_sim.v" in library work
+Module <detect7B> compiled
+Module <ids_sim> compiled
+No errors in compilation
+Analysis of file <"ids_sim.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+ERROR:HDLCompilers:88 - "ids_sim/fallthrough_small_fifo_v2.v" line 41 Parameter 'PROG_FULL_THRESHOLD' does not exist in module 'small_fifo'
+--> 
+
+Total memory usage is 110360 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
